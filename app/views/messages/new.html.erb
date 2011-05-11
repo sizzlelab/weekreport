@@ -12,7 +12,7 @@ Reports are sent to OtaSizzle staff automatically every Monday at 2PM. If you wa
 </p>
 
 <% method = @message.new_record? ? "put" : "post" %>
-<% form_for(@message, :method => method) do |f| %>
+<%= form_for(@message, :method => method) do |f| %>
   <%= f.error_messages %>
   <% selected = params[:message] ? params[:message][:team_id] : params[:team] %>
   <p>
