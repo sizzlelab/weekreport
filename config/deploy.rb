@@ -8,6 +8,7 @@ set :user, "kassi"
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 ssh_options[:forward_agent] = true
+set :use_sudo, false
 
 set :deploy_via, :remote_cache
 
