@@ -25,7 +25,7 @@ class ReportMailer < ActionMailer::Base
   def weekly_report
     logger.info "Sending weekly report"
      
-    mail(:to =>  APP_CONFIG.reporter_recipients,
+    mail(:to =>  APP_CONFIG.report_recipients,
     :subject =>  "OtaSizzle weekly report, week #{Date.today.cweek}")
   end
   
