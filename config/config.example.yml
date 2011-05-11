@@ -1,0 +1,13 @@
+default: &default_settings
+  reporter_url = "http://weekreport.example.com/"
+  report_recipients = ["staff-list@example", "something@else"]
+  
+production:
+  <<: *default_settings
+
+
+development:
+  <<: *default_settings
+  
+test:
+  <<: *default_settings
