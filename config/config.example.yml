@@ -1,6 +1,6 @@
 default: &default_settings
-  reporter_url = "http://weekreport.example.com/"
-  report_recipients = ["staff-list@example", "something@else"]
+  reporter_url: "http://weekreport.example.com/"
+  report_recipients: ["staff-list@example", "something@else"]
   
 production:
   <<: *default_settings
